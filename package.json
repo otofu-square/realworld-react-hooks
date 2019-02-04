@@ -2,6 +2,11 @@
   "name": "realworld-react-hooks",
   "version": "0.0.1",
   "license": "MIT",
+  "scripts": {
+    "dev": "next ./src",
+    "build": "rm -rf ./src/.next && next build ./src",
+    "start": "yarn build && next start ./src"
+  },
   "dependencies": {
     "next": "7.0.2",
     "react": "16.8.0-alpha.1",

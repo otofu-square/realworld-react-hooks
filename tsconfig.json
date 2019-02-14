@@ -1,15 +1,17 @@
 {
   "compilerOptions": {
+    "target": "es5",
+    "lib": ["dom", "dom.iterable", "esnext", "es2015"],
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
     "module": "esnext",
-    "target": "esnext",
-    "jsx": "preserve",
-    "sourceMap": false,
-    "experimentalDecorators": true,
-    "noImplicitUseStrict": true,
-    "removeComments": true,
     "moduleResolution": "node",
-    "lib": ["es2017", "dom"],
+    "noEmit": true,
+    "jsx": "preserve",
     "typeRoots": ["src/typings"]
   },
-  "exclude": ["node_modules", "out", "src/.next"]
+  "include": ["src"]
 }

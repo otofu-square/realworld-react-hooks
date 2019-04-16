@@ -1,15 +1,8 @@
 module.exports = {
-  processors: [
-    [
-      "stylelint-processor-styled-components",
-      {
-        moduleName: "@emotion/styled"
-      }
-    ]
-  ],
-  extends: [
-    "stylelint-config-recommended",
-    "stylelint-config-styled-components",
-    "stylelint-config-prettier"
-  ]
+  plugins: ["stylelint-order"],
+  extends: ["stylelint-config-standard", "stylelint-config-prettier"],
+  rules: {
+    "order/properties-alphabetical-order": true,
+    "declaration-empty-line-before": false
+  }
 };

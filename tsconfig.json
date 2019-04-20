@@ -11,7 +11,7 @@
     "moduleResolution": "node",
     "noEmit": true,
     "jsx": "preserve",
-    "typeRoots": ["src/typings"]
+    "typeRoots": ["typings"]
   },
-  "include": ["src"]
+  "include": ["src", "typings"]
 }

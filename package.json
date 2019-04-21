@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "license": "MIT",
   "scripts": {
-    "build": "rm -rf ./src/.next && next build ./src",
+    "build": "rm -rf ./src/.next && next build ./src && tsc --project tsconfig.server.json",
     "start": "(cd ./src && node ./server.js)",
     "start:dev": "yarn start",
     "start:prod": "yarn build && NODE_ENV=production yarn start",
@@ -16,14 +16,19 @@
     "@emotion/core": "10.0.10",
     "@emotion/styled": "10.0.10",
     "express": "4.16.4",
+    "i18next": "15.0.9",
+    "i18next-browser-languagedetector": "3.0.1",
+    "i18next-express-middleware": "1.8.0",
     "isomorphic-unfetch": "3.0.0",
     "next": "8.1.0",
     "react": "16.8.6",
-    "react-dom": "16.8.6"
+    "react-dom": "16.8.6",
+    "react-i18next": "10.8.1"
   },
   "devDependencies": {
     "@types/express": "4.16.1",
     "@types/next": "8.0.3",
+    "@types/node": "11.13.6",
     "@types/react": "16.8.14",
     "@types/styled-components": "4.1.14",
     "@typescript-eslint/eslint-plugin": "1.6.0",

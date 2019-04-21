@@ -8,4 +8,9 @@ const Index = () => {
   );
 };
 
+Index.getInitialProps = async ctx => {
+  console.log(ctx.req.i18n);
+  return {};
+};
+
 export default Index;

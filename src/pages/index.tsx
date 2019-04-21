@@ -1,10 +1,11 @@
-import * as React from "react";
-import styled from "@emotion/styled";
+import React from "react";
 
-const StyledHeader = styled.h1`
-  display: flex;
-  font-size: 0.87em;
-  color: red;
-`;
+const Index = () => {
+  return (
+    <div>
+      <p>Hello Next.js</p>
+    </div>
+  );
+};
 
-export default () => <StyledHeader>Hello World</StyledHeader>;
+export default Index;
